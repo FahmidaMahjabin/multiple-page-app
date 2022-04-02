@@ -12,7 +12,7 @@ const GetNav = () => {
                         <Link className = "nav-link" to="/">Home</Link >
                         <Link className = "nav-link" to="/about">About</Link >
                         <Link className = "nav-link" to="/users">Users</Link >
-                        <Link className = "nav-link" to="/usere/${user.id}">User</Link >
+                        <Link className = "nav-link" to="/user/:id">User</Link >
                         
                     </Nav>
                 </Navbar.Collapse>

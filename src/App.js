@@ -4,6 +4,7 @@ import About from './About/About';
 import './App.css';
 import GetNav from './Components/Navbar/Navbar';
 import OneUser from './Components/OneUser/OneUser';
+import UserDetail from './Components/UserDetail/UserDetail';
 import Home from './Home/Home';
 import Notfound from './Notfound/Notfound';
 import Users from './Users/Users';
@@ -21,7 +22,7 @@ function App() {
             <Route exact path = "/" element = {<Home></Home>}></Route>
             <Route path='/about' element = {<About></About>}></Route>
             <Route path='/users' element = {<Users></Users>}></Route>
-            <Route path='/user' element = {<OneUser></OneUser>}></Route>
+            <Route path='/users/:id' element = {<UserDetail></UserDetail>}></Route>
             <Route path = "*" element = {Notfound}></Route>
           </Routes>
         
